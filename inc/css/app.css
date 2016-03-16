@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: ghostwhite;
 }
 
 .logo{
@@ -8,12 +9,7 @@ body {
 
 
 nav.scrolled {
-    position: fixed;
-    top: -70px;
-    background: gray;
-    transform: translateY(70px);
-    transition: transform 500ms ease,background 900ms ease;
-    -webkit-transition: transform 500ms ease,background 900ms ease;
+
 }
 
 nav {
@@ -55,8 +51,6 @@ nav {
 
 
 .slide_inside {
-    padding: 2%;
-    width: 980px;
     margin: 0 auto;
 }
 
@@ -67,4 +61,10 @@ nav {
 .slide_inside_text {
     text-align: center;
     font-size: 26px;
+}
+
+.footer {
+    background-color: ghostwhite;
+    text-align: center;
+    margin-top: 8px;
 }
