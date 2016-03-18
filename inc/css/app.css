@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'baskerville_old_faceregular';
+    src: url('../font/baskerville_old_face-webfont.eot');
+    src: url('../font/baskerville_old_face-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/baskerville_old_face-webfont.woff2') format('woff2'),
+    url('../font/baskerville_old_face-webfont.woff') format('woff'),
+    url('../font/baskerville_old_face-webfont.ttf') format('truetype'),
+    url('../font/baskerville_old_face-webfont.svg#baskerville_old_faceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: baskerville_old_faceregular, sans-serif;
     background-color: ghostwhite;
 }
 
@@ -66,7 +79,6 @@ nav {
 .footer {
     background-color: ghostwhite;
     text-align: center;
-    margin-top: 8px;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
@@ -128,7 +140,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     color: #FFF;
     font-size: 156pt;
     text-align: center;
-    line-height: 380px;
+    line-height: 400%;
     font-family: "Varela Round", sans-serif;
     background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
@@ -182,4 +194,80 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.head-slide {
+ padding: 0 !important;
+}
+
+.dropdown-content:active {
+    width: 300Px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    opacity: 1;
+    display: block;
+    height: 1000%;
+}
+
+.dropdown-test {
+    width: 300px !important;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    background-color: ghostwhite;
+    height: 1000% !important;
+    min-height: 3000px !important;
+    border-right: 1px solid black;
+}
+
+.dropdown-test a {
+    color: black;
+    font-size: 20px;
+}
+
+.dropdown-test a:hover {
+    color: darkslategrey;
+
+
+}
+
+
+
+.dropdown-test li {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+}
+
+.gras-nav {
+    font-weight: 600;
+    font-size: 27px;
+    background-color: #EAEAF1;
+}
+
+.lang {
+    padding-top: 15px;
+
+}
+
+.lang img {
+    width: 40px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition-duration:0.2s;
+}
+
+.lang .img:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.6s;
+}
+
+.second-l {
+    width: 105px !important;
+}
+
+.row {
+    margin-bottom: 0px !important;
 }

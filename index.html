@@ -17,19 +17,61 @@
 
 
 
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#slide1">Accueil</a></li>
+<ul id="dropdown1" class="dropdown-test">
+    <li class="gras-nav"><a href="#slide1">ACCUEIL</a></li>
+    <br>
+    <br>
+    <li class="gras-nav">LES PRODUITS</li>
+    <hr>
     <li><a href="#slide2">produit 1</a></li>
     <li><a href="#slide3">produit 2</a></li>
+    <br>
+    <br>
+
+
+    <li class="gras-nav">L'ENTREPRISE</li>
+    <hr>
     <li><a href="#slide4">Entreprise</a></li>
     <li><a href="#slide5">Equipe</a></li>
     <li><a href="#slide6">Fondation</a></li>
+    <br>
+    <br>
+    <li class="gras-nav">RESEAU SOCIAUX</li>
+    <hr>
+    <li>facebook twitter google+</li>
 </ul>
+
+<ul id="dropdown2" class="dropdown-content">
+    <li>
+        <img src="inc/img/fr.png" alt="">
+        Français
+    </li>
+
+    <li>
+        <img src="inc/img/en.png" alt="">
+        English
+    </li>
+
+
+</ul>
+
+
 <div class="navbar-fixed">
 <nav class="grey darken-4">
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center"></a>
+        <a href="#!" class="brand-logo center"><img class="logo" border="0" alt="golf" style="width: 65px; margin-top: 0px;" src="inc/img/logoblanc.png"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="lang right">
+            <img class="img" src="inc/img/fr.png" alt=""><img class="img" src="inc/img/en.png" alt="">
+
+
+            <a class="dropdown-button" href="#!" data-activates="dropdown2"><img class="second-l" src="inc/img/ras.png" alt=""></a>
+
+
+
+
+        </div>
+
         <ul class="left hide-on-med-and-down">
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">menu</i></a></li>
 
@@ -48,17 +90,17 @@
 
 
 <div class="row">
-    <div class="col s12">
+    <div class="col s12 head-slide">
 
         <div id="slide1">
 
-            <div class="slide_inside col s12">
+            <div class="slide_inside col s12 head-slide">
 
                 <ul class="slides">
                     <input type="radio" name="radio-btn" id="img-1" checked />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+                            <img src="inc/img/slider1.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-6" class="prev">&#x2039;</label>
@@ -69,7 +111,7 @@
                     <input type="radio" name="radio-btn" id="img-2" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+                            <img src="inc/img/slider2.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-1" class="prev">&#x2039;</label>
@@ -80,7 +122,7 @@
                     <input type="radio" name="radio-btn" id="img-3" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+                            <img src="inc/img/slider3.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-2" class="prev">&#x2039;</label>
@@ -91,7 +133,7 @@
                     <input type="radio" name="radio-btn" id="img-4" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+                            <img src="inc/img/slider4.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-3" class="prev">&#x2039;</label>
@@ -102,7 +144,7 @@
                     <input type="radio" name="radio-btn" id="img-5" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+                            <img src="inc/img/slider5.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-4" class="prev">&#x2039;</label>
@@ -113,7 +155,7 @@
                     <input type="radio" name="radio-btn" id="img-6" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+                            <img src="inc/img/slider6.jpg" />
                         </div>
                         <div class="nav">
                             <label for="img-5" class="prev">&#x2039;</label>
@@ -173,11 +215,11 @@
 
         </div>
 
-        <div class="footer">
-           <span class="grey-text text-lighten-1">© golf - 2016</span>
-        </div>
 
     </div>
+</div>
+<div class="footer">
+    <span class="grey-text text-lighten-1">© golf - 2016</span>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -203,17 +245,13 @@
             if($scrollTop > $headerHeight){
                 $header.addClass('scrolled');
                 $title.css('padding-top','70px');
-                $('.logo').fadeOut('slow').remove();
-                $('.logo').remove();
-                $( ".brand-logo").prepend('<img class="logo" border="0" alt="golf" style="width: 96px; margin-top: 29px;" src="inc/img/logoscroll.png">');
+
 
             }
             else if($scrollTop == 0) {
                 $header.removeClass('scrolled');
                 $title.css('padding-top','0');
-                $('.logo').fadeOut('slow').remove();
-                $('.logo').remove();
-                $( ".brand-logo").prepend('<img class="logo" border="0" alt="golf" style="width: 65px; margin-top: 0px;" src="inc/img/logoblanc.png">');
+
             }
 
         }
