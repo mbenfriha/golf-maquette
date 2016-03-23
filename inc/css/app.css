@@ -36,14 +36,16 @@ nav {
     -webkit-transition: background 500ms ease;
 }
 
-#slide2, #slide4{
+#slide2{
     height: 1000px;
     padding-top: 100px;
 }
 
+
 #slide1 {
     height: 900px;
-    background-color: ghostwhite;
+    background-color: #F9F6E4;
+
 }
 #slide2 {
     height: 900px;
@@ -53,14 +55,14 @@ nav {
 }
 #slide3 {
     height: 900px;
-    background-color: ghostwhite;
-
+    background-color: #F9F6E4;
 }
 
 #slide4 {
-    background: url(../img/slide3.jpg) center 0 no-repeat fixed;
-    background-size: cover;
+    height: 400px;
+    background-color: #F9F6E4;
 }
+
 
 
 
@@ -82,9 +84,9 @@ nav {
     text-align: center;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-
-html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }
+/*
+ * slide
+ */
 
 .slides {
     padding: 0;
@@ -119,12 +121,31 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     transform: scale(0);
 
     transition: all .7s ease-in-out;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    margin: auto 3%;
 }
+#slide3 .slide .position-image2 {
+    width: 98% ;
+    height: 97% ;
+    margin: 1% 1% ;
+}
+
+#slide3 .slide img {
+    width: 90%;
+    height: 100%;
+    margin: -10% 13%;
+}
+
+.position-image {
+    position: absolute;
+    left: 14%;
+}
+
 
 .nav label {
     width: 200px;
@@ -139,9 +160,9 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     transition: opacity .2s;
 
     color: #FFF;
-    font-size: 156pt;
+    font-size: 98pt;
     text-align: center;
-    line-height: 400%;
+    line-height: 700%;
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
@@ -172,13 +193,13 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots .nav-dot {
     top: -5px;
-    width: 20px;
-    height: 20px;
-    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    margin: 0px 4px;
     position: relative;
     border-radius: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(134, 130, 130);
 }
 
 .nav-dots .nav-dot:hover {
@@ -192,8 +213,20 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(78, 75, 75);
+    border: 1px rgb(134, 130, 130) solid;
 }
+
+input#img-1bis:checked ~ .nav-dots label#img-dot-1bis,
+input#img-2bis:checked ~ .nav-dots label#img-dot-2bis,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgb(78, 75, 75);
+    border: 1px rgb(134, 130, 130) solid;
+}
+
 
 .head-slide {
  padding: 0 !important;
@@ -281,4 +314,22 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 nav {
     color: black;
+}
+
+#slide3 .text {
+    position: absolute;
+    width: 800px;
+    margin: 0px 26%;
+    font-size: 19px;
+}
+
+#slide4 .text {
+    width: 1000px;
+    margin: 18px 20%;
+    font-size: 21px;
+    text-align: center;
+}
+
+#slide3 h1 {
+    text-align: center;
 }
