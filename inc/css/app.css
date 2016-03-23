@@ -12,8 +12,9 @@
 }
 
 body {
-    font-family: baskerville_old_faceregular, sans-serif;
-    background-color: ghostwhite;
+    font-family: baskerville_old_faceregular, sans-serif !important;
+    background-color: #F9F6E4;
+    color: black;
 }
 
 .logo{
@@ -45,8 +46,8 @@ nav {
     background-color: ghostwhite;
 }
 #slide2 {
-    height: 300px;
-    background: url(../img/slide2.jpg) center 0 no-repeat fixed;
+    height: 900px;
+    background: url(../img/slider1.png) center 0 no-repeat fixed;
     background-size: cover;
 
 }
@@ -141,8 +142,6 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     font-size: 156pt;
     text-align: center;
     line-height: 400%;
-    font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
@@ -164,7 +163,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
     width: 100%;
-    bottom: 9px;
+    bottom: 50px;
     height: 11px;
     display: block;
     position: absolute;
@@ -173,8 +172,8 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots .nav-dot {
     top: -5px;
-    width: 11px;
-    height: 11px;
+    width: 20px;
+    height: 20px;
     margin: 0 4px;
     position: relative;
     border-radius: 100%;
@@ -265,9 +264,21 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 .second-l {
-    width: 105px !important;
+    width: 145px !important;
 }
 
 .row {
     margin-bottom: 0px !important;
+}
+
+#dropdown2 li {
+    text-align: center;
+}
+
+.nav-color {
+    background-color: #F9F6E4;
+}
+
+nav {
+    color: black;
 }
