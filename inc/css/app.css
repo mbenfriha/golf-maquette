@@ -59,8 +59,16 @@ nav {
 }
 
 #slide4 {
-    height: 400px;
+    padding-top: 22px;
+    height: 450px;
     background-color: #F9F6E4;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#slide5 {
+    padding-top: 50px;
+    height: 682px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 
@@ -325,11 +333,30 @@ nav {
 
 #slide4 .text {
     width: 1000px;
-    margin: 18px 20%;
+    margin: auto 20%;
     font-size: 21px;
     text-align: center;
 }
 
 #slide3 h1 {
     text-align: center;
+}
+
+#slide5 .slide_inside img {
+    width: 41% !important;
+    float: left;
+    margin-right: 25px;
+}
+
+#slide5 .text {
+    font-size: 27px;
+}
+
+#slide5 h1 {
+    text-align: center;
+}
+
+.page-5 {
+    width: 90%;
+    margin: 0 auto;
 }
