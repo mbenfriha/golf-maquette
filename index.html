@@ -31,19 +31,19 @@
 
 <ul id="dropdown1" class="dropdown-test">
 
-    <li id="close-nav"><i class="fa fa-angle-left"></i> FERMER LE MENU</li>
+    <li id="close-nav"><i class="fa fa-times"></i></li>
 
-    <li><a href="#slide2">Accueil</a></li>
+    <li><a href="#accueil">Accueil</a></li>
         <li>-</li>
-    <li><a href="#slide1">Produits</a></li>
-    <li><a href="#slide3">Visuel</a></li>
-    <li><a href="#slide4">Visibilité</a></li>
-    <li><a href="#slide5">La Fondation PGI</a></li>
-    <li><a href="#slide6">PGI</a></li>
+    <li><a href="#produits">Produits</a></li>
+    <li><a href="#visuel">Visuel</a></li>
+    <li><a href="#visibilite">Visibilité</a></li>
+    <li><a href="#pgi">PGI</a></li>
+    <li><a href="#fondation">La Fondation PGI</a></li>
     <li>-</li>
-    <li><a href="#footer">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
     
-    <li><img src="inc/img/logo.png" alt=""></li>
+    <li id="logo-nav"><img src="inc/img/logo.png" alt=""></li>
 
 
 
@@ -79,7 +79,7 @@
             </div>
 
             <ul class="left hide-on-med-and-down">
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">menu</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons black-text">menu</i></a></li>
 
             </ul>
             <ul class="side-nav" id="mobile-demo">
@@ -94,8 +94,9 @@
     </nav>
 </div>
 
+<div id="accueil"></div>
 
-<div class="row">
+<div  class="row">
 
     <div id="slide2">
 
@@ -110,6 +111,7 @@
     </div>
 
 
+    <div id="produits"></div>
     <div class="col s12 head-slide">
 
         <div id="slide1">
@@ -160,6 +162,7 @@
 
         </div>
 
+<div id="visuel"></div>
 
         <div id="slide3">
 
@@ -168,8 +171,6 @@
                 <ul class="slides">
                     <input type="radio" name="radio-btn2" id="img-1bis" checked/>
                     <li class="slide-container">
-                        <div class="slide">
-                            <div class="container-slide3">
                                 <div class="text">
                                     <h1>Creestal board I</h1>
                                     <p>
@@ -180,7 +181,9 @@
                                     </p>
 
                                 </div>
-                                <img src="inc/img/page3.png" />
+                        <div class="slide">
+                            <div class="container-slide3">
+                                <img class="position-image1" src="inc/img/page3.png" />
 
                             </div>
                         </div>
@@ -207,7 +210,7 @@
 
                     <li class="nav-dots">
                         <label for="img-1bis" class="nav-dot" id="img-dot-1bis"></label>
-                        <label for="img-2bis" class="nav-dot" id="img-dot-2bis"></label>
+                        <label for="img-2bis" class="nav-dot" id="img-dot-2bis"><div id="visibilite"></div></label>
 
                     </li>
                 </ul>
@@ -216,20 +219,56 @@
 
         </div>
 
+
+
         <div id="slide4">
 
 
-            <div class="slide_inside">
+            <div  class="slide_inside">
                     <div class="text">
-                        De par son esthétisme, la Creestal Board I saura faire resplendir l’élégance et la modernité du parcours.
+                        De par son esthétisme, Creestal Board I saura faire resplendir l’élégance et la modernité du parcours.
                         Les plus beaux golfs internationaux en étant équipés, les compétitions prestigieuses qui s’y tiennent assurent une visibilité exceptionnelle du produit grâce à la présence des médias golfiques partenaires  couvrant l’événement.
-                        Il assure une aura pour le golf et les marques associées sur les télévisions du monde entiers et dans la presse spécialisée.
+                        Creestal Board I affirmera une aura pour le golf et les marques associées sur les télévisions du monde entier et dans la presse spécialisée.
                     </div>
 
                     <img src="inc/img/partenaires.png" />
+                <div id="pgi"></div>
             </div>
 
         </div>
+
+
+
+        <div id="slide6">
+            <div class="slide_inside">
+
+
+                <div class="page-5">
+
+                    <div class="text">
+                    <h1>Prestige Golf International</h1>
+                        <p>Applaudi à l’unanimité par les acteurs golfiques,  PGI vise à agrémenter les golfs en équipant les départs de golf d’un mobilier de haut-standing, au design avant-gardiste et harmonieux.
+                        </p>
+
+                        <p>PGI souhaite améliorer l’image du golf et le promouvoir en conciliant le prestige des plus belles marques avec l’étiquette golfique.
+                        </p>
+
+                        <p>Ainsi, PGI et sa fondation s’engagent à faire rayonner les valeurs nobles du golf à travers le monde et les générations.
+                        </p>
+
+                        <img class="logo-slide6" src="inc/img/logo-s.png" alt="pgi logo">
+
+                    </div>
+
+                    <img src="inc/img/image6.png" />
+
+                    <div id="fondation"></div>
+                </div>
+
+            </div>
+        </div>
+
+
 
         <div id="slide5">
             <div class="slide_inside">
@@ -240,44 +279,15 @@
                     <img src="inc/img/enfant.png" />
 
 
-                    <h1>La Fondation PGI</h1>
+                    <h1>La Fondation Prodige Golf International</h1>
                     <div class="text">
                         <p>Pourquoi empêcher un enfant talentueux de réaliser son rêve à travers sa passion ?</p>
 
-                        <p>Considérant que les moyens financiers d’un jeûne talent ne doivent pas être un obstacle à sa réussite, la Fondation Prestige Golf International, initiative unique et internationale, aide les prodiges du golf en difficulté financière afin de permettre à tout prodige du golf de faire briller son excellence et son sport.</p>
+                        <p>Considérant que les moyens financiers d’un jeune talent ne doivent pas être un obstacle à sa réussite, La Fondation Prodige Golf International, aide les prodiges du golf en difficulté financière.</p>
 
                         <p>A travers notre initiative mettant à l’honneur les valeurs golfiques, nous aidons les prodiges les plus prometteurs à travers le monde.</p>
 
                     </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="slide6">
-            <div class="slide_inside">
-
-
-                <div class="page-5">
-
-                    <div class="text">
-                    <h1>Prestige Golf International</h1>
-                        <p>Applaudi à l’unanimité par les acteurs golfiques,  PGI vise à agrémenter les golfs en équipant les départs de golf d’un mobilier de haut-standing, approuvé par la PGA, au design avant-gardiste et harmonieux.
-                        </p>
-
-                        <p>Nous cherchons à améliorer l’image du golf et à le promouvoir en conciliant le prestige des plus belles marques avec l’étiquette golfique.
-                        </p>
-
-                        <p>Ainsi, PGI et sa fondation s’engagent a faire rayonner les valeurs nobles du golf à travers le monde et les générations.
-                        </p>
-
-                        <img class="logo-slide6" src="inc/img/logo-s.png" alt="pgi logo">
-
-                    </div>
-
-                    <img src="inc/img/image6.png" />
-
-
                 </div>
 
             </div>
@@ -298,7 +308,7 @@
 
     </div>
 </div>
-<div id="footer" class="footer">
+<div id="contact" class="footer">
     <span class="grey-text text-lighten-1">Contact : <a href="mailto:contact@pgi.golf">contact@pgi.golf</a> - © PGI</span>
 </div>
 
