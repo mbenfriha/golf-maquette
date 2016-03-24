@@ -15,33 +15,38 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-75487386-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
 
 
 
 <ul id="dropdown1" class="dropdown-test">
-    <li class="gras-nav"><a href="#slide1">ACCUEIL</a></li>
-    <br>
-    <br>
-    <li class="gras-nav">LES PRODUITS</li>
-    <hr>
-    <li><a href="#slide2">produit 1</a></li>
-    <li><a href="#slide3">produit 2</a></li>
-    <br>
-    <br>
+
+    <li id="close-nav"><i class="fa fa-angle-left"></i> FERMER LE MENU</li>
+
+    <li><a href="#slide2">Accueil</a></li>
+        <li>-</li>
+    <li><a href="#slide1">Produits</a></li>
+    <li><a href="#slide3">Visuel</a></li>
+    <li><a href="#slide4">Visibilité</a></li>
+    <li><a href="#slide5">La Fondation PGI</a></li>
+    <li><a href="#slide6">PGI</a></li>
+    <li>-</li>
+    <li><a href="#footer">Contact</a></li>
+    
+    <li><img src="inc/img/logo.png" alt=""></li>
 
 
-    <li class="gras-nav">L'ENTREPRISE</li>
-    <hr>
-    <li><a href="#slide4">Entreprise</a></li>
-    <li><a href="#slide5">Equipe</a></li>
-    <li><a href="#slide6">Fondation</a></li>
-    <br>
-    <br>
-    <li class="gras-nav">RESEAU SOCIAUX</li>
-    <hr>
-    <li>facebook twitter google+</li>
+
 </ul>
 
 <ul id="dropdown2" class="dropdown-content">
@@ -96,6 +101,9 @@
 
         <div class="slide_inside col s12 slide_inside_text">
 
+            <h1> Enlight Golf with Elegance </h1>
+
+
 
         </div>
 
@@ -111,9 +119,14 @@
                 <ul class="slides">
                     <input type="radio" name="radio-btn" id="img-1" checked />
                     <li class="slide-container">
+                        <img class="logo-rond" src="inc/img/logo-rond.png" />
+                        <img class="model-right-top" src="inc/img/model.png" />
+                        <img class="model-right-bottom" src="inc/img/sign.png" />
                         <div class="slide">
 
+
                             <img src="inc/img/produit1.png" />
+
 
                         </div>
                         <div class="nav">
@@ -126,8 +139,8 @@
                         <div class="slide">
 
 
-                            <img class="position-image" src="inc/img/produit2.png" />
-                            <img class="position-image" src="inc/img/produit2bis.png" />
+                            <img class="img-produit2" class="position-image" src="inc/img/produit2.png" />
+
 
 
                         </div>
@@ -156,20 +169,20 @@
                     <input type="radio" name="radio-btn2" id="img-1bis" checked/>
                     <li class="slide-container">
                         <div class="slide">
+                            <div class="container-slide3">
+                                <div class="text">
+                                    <h1>Creestal board I</h1>
+                                    <p>
+                                        Prestige Golf International présente Creestal Board I, un mobilier harmonieux et
+                                        révolutionnaire qui saura moderniser les plus beaux départs de parcours. Son design et
+                                        ses composants avant-gardistes redéfinissent la notion d’élégance et de plaisir sur le
+                                        parcours, maîtres-mots emblématiques de PGI.
+                                    </p>
 
-                            <div class="text">
-                                <h1>Creestal board I</h1>
-                                <p>
-                                    Prestige Golf International présente Creestal Board I, un mobilier harmonieux et
-                                    révolutionnaire qui saura moderniser les plus beaux départs de parcours. Son design et
-                                    ses composants avant-gardistes redéfinissent la notion d’élégance et de plaisir sur le
-                                    parcours, maîtres-mots emblématiques de PGI.
-                                </p>
+                                </div>
+                                <img src="inc/img/page3.png" />
 
                             </div>
-
-                            <img src="inc/img/page3.png" />
-
                         </div>
                         <div class="nav">
                             <label for="img-2bis" class="next"><i class="fa fa-angle-right"></i></label>
@@ -182,6 +195,7 @@
 
 
                             <img class="position-image2" src="inc/img/page3-img.png" />
+
 
 
 
@@ -206,7 +220,6 @@
 
 
             <div class="slide_inside">
-                <ul class="slides">
                     <div class="text">
                         De par son esthétisme, la Creestal Board I saura faire resplendir l’élégance et la modernité du parcours.
                         Les plus beaux golfs internationaux en étant équipés, les compétitions prestigieuses qui s’y tiennent assurent une visibilité exceptionnelle du produit grâce à la présence des médias golfiques partenaires  couvrant l’événement.
@@ -214,7 +227,6 @@
                     </div>
 
                     <img src="inc/img/partenaires.png" />
-                </ul>
             </div>
 
         </div>
@@ -223,30 +235,71 @@
             <div class="slide_inside">
 
 
-                    <div class="page-5">
+                <div class="page-5">
 
-                        <img src="inc/img/enfant.png" />
+                    <img src="inc/img/enfant.png" />
 
 
-                        <h1>La Fondation PGI</h1>
-                        <div class="text">
-                            <p>Pourquoi empêcher un enfant talentueux de réaliser son rêve à travers sa passion ?</p>
+                    <h1>La Fondation PGI</h1>
+                    <div class="text">
+                        <p>Pourquoi empêcher un enfant talentueux de réaliser son rêve à travers sa passion ?</p>
 
-                            <p>Considérant que les moyens financiers d’un jeûne talent ne doivent pas être un obstacle à sa réussite, la Fondation Prestige Golf International, initiative unique et internationale, aide les prodiges du golf en difficulté financière afin de permettre à tout prodige du golf de faire briller son excellence et son sport.</p>
+                        <p>Considérant que les moyens financiers d’un jeûne talent ne doivent pas être un obstacle à sa réussite, la Fondation Prestige Golf International, initiative unique et internationale, aide les prodiges du golf en difficulté financière afin de permettre à tout prodige du golf de faire briller son excellence et son sport.</p>
 
-                            <p>A travers notre initiative mettant à l’honneur les valeurs golfiques, nous aidons les prodiges les plus prometteurs à travers le monde.</p>
+                        <p>A travers notre initiative mettant à l’honneur les valeurs golfiques, nous aidons les prodiges les plus prometteurs à travers le monde.</p>
 
-                        </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="slide6">
+            <div class="slide_inside">
+
+
+                <div class="page-5">
+
+                    <div class="text">
+                    <h1>Prestige Golf International</h1>
+                        <p>Applaudi à l’unanimité par les acteurs golfiques,  PGI vise à agrémenter les golfs en équipant les départs de golf d’un mobilier de haut-standing, approuvé par la PGA, au design avant-gardiste et harmonieux.
+                        </p>
+
+                        <p>Nous cherchons à améliorer l’image du golf et à le promouvoir en conciliant le prestige des plus belles marques avec l’étiquette golfique.
+                        </p>
+
+                        <p>Ainsi, PGI et sa fondation s’engagent a faire rayonner les valeurs nobles du golf à travers le monde et les générations.
+                        </p>
+
+                        <img class="logo-slide6" src="inc/img/logo-s.png" alt="pgi logo">
+
+                    </div>
+
+                    <img src="inc/img/image6.png" />
+
+
+                </div>
 
             </div>
         </div>
 
 
+
+        <div id="slide7">
+
+            <div class="slide_inside col s12 slide_inside_text">
+
+
+            </div>
+
+        </div>
+
+
+
     </div>
 </div>
-<div class="footer">
-    <span class="grey-text text-lighten-1">© golf - 2016</span>
+<div id="footer" class="footer">
+    <span class="grey-text text-lighten-1">Contact : <a href="mailto:contact@pgi.golf">contact@pgi.golf</a> - © PGI</span>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
